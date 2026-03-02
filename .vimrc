@@ -106,4 +106,11 @@ set laststatus=2
 
 " }}}
 
+" Plugin config
 
+call plug#begin()
+
+" List plugins here
+Plug 'tpope/vim-sensible'
+
+call plug#end()
