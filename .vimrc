@@ -112,8 +112,9 @@ call plug#begin()
 
 " List plugins here
 Plug 'tpope/vim-sensible'
+
 " Python suggestions
-"Plug 'davidhalter/jedi-vim'
+Plug 'davidhalter/jedi-vim'
 
 " Code suggestions/ completion
 Plug 'ervandew/supertab'
@@ -122,6 +123,6 @@ Plug 'ervandew/supertab'
 Plug 'Raimondi/delimitMate'
 
 " Syntax highlighting
-Plug 'sheerun/vim-polygot'
+Plug 'sheerun/vim-polyglot'
 
 call plug#end()
