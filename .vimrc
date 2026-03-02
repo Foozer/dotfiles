@@ -112,5 +112,16 @@ call plug#begin()
 
 " List plugins here
 Plug 'tpope/vim-sensible'
+" Python suggestions
+"Plug 'davidhalter/jedi-vim'
+
+" Code suggestions/ completion
+Plug 'ervandew/supertab'
+
+" Automatically closing parenthesis and quotes
+Plug 'Raimondi/delimitMate'
+
+" Syntax highlighting
+Plug 'sheerun/vim-polygot'
 
 call plug#end()
