@@ -31,6 +31,14 @@ syntax on
 " Add numbers to each line on the left-hand side.
 set number
 
+" Switches between hybrid and absolute numbers depending on if it is in insert mode
+" or not.
+:augroup numbertoggle
+:  autocmd!
+:  autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu && mode() != "i" | set rnu   | endif
+:  autocmd BufLeave,FocusLost,InsertEnter,WinLeave   * if &nu                  | set nornu | endif
+:augroup END
+
 " Highlight cursor line underneath the cursor horizontally.
 set cursorline
 
